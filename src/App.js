@@ -55,7 +55,7 @@ function App() {
         container: "map",
         style: "mapbox://styles/mapbox/streets-v11",
         center: coords[Math.floor(apiData.length / 2)],
-        zoom: 13,
+        zoom: 15,
       });
       map.addControl(new mapboxgl.NavigationControl());
 
