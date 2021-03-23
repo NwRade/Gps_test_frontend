@@ -15,7 +15,8 @@ function App() {
     const interval = setInterval(() => {
       axios
         // .get("http://192.168.29.49:3000/gps/relive/updated.json")
-        .get("http://192.168.29.49:3000/gps/live")
+        // .get("http://192.168.29.49:3000/gps/live")
+        .get("http://192.168.43.1:3000/gps/live")
         .then((res) => {
           apiData.push(res.data.GPS);
           for (let i = 0; i < apiData.length; i++) {
